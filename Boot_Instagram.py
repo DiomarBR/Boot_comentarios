@@ -50,19 +50,7 @@ class BotInstagram():
             time.sleep(random.randint(30,150))
         except Exception as e:
             print(e)
-        
-        for i in 10 :
-            driver.execute_script('window.scrollto(0, document.body.scrollHeigt);')
-            try:
-                comentario = ["@diomar_goncalve"]
-                cp_comentario = driver.find_element_by_class_name('x1i0vuye xvbhtw8 x76ihet xwmqs3e x112ta8 xxxdfa6 x5n08af x78zum5 x1iyjqo2 x1qlqyl8 x1d6elog xlk1fp6 x1a2a7pz xexx8yu x4uap5 x18d9i69 xkhd6sd xtt52l0 xnalus7 x1bq4at4 xaqnwrm xs3hnx8').click()
-                cp_comentario = driver.find_element_by_class_name('x1i0vuye xvbhtw8 x76ihet xwmqs3e x112ta8 xxxdfa6 x5n08af x78zum5 x1iyjqo2 x1qlqyl8 x1d6elog xlk1fp6 x1a2a7pz xexx8yu x4uap5 x18d9i69 xkhd6sd xtt52l0 xnalus7 x1bq4at4 xaqnwrm xs3hnx8')
-                time.sleep(random.randint(2,10))
-                self.digite_como_pessoa(random.choice(comentario),cp_comentario)
-                time.sleep(random.randint(30,150))
-            except Exception as e:
-                print(e)
-                
+    
                 
                 
 ComentariosBot = BotInstagram('diomar_goncalve','Diomar02012')
